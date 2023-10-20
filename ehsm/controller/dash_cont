@@ -1,0 +1,40 @@
+sap.ui.define([
+    "sap/ui/core/mvc/Controller"
+],
+    /**
+     * @param {typeof sap.ui.core.mvc.Controller} Controller
+     */
+    function (Controller) {
+        "use strict";
+
+        return Controller.extend("ehsm.controller.dashboard", {
+            onInit: function () {
+
+            },
+        onClick1:function(){
+            window.console.log("login success");
+            var oR = sap.ui.core.UIComponent.getRouterFor(this);
+            oR.navTo("Route_details");
+    },
+    onClick2:function(){
+            window.console.log("login success");
+            var oR = sap.ui.core.UIComponent.getRouterFor(this);
+            oR.navTo("Route_incident");
+    },
+    onClick3:function(){
+            window.console.log("login success");
+            var oR = sap.ui.core.UIComponent.getRouterFor(this);
+            oR.navTo("Route_risklist");
+    },
+    onClick4:function(){
+        window.console.log("login success");
+        var oR = sap.ui.core.UIComponent.getRouterFor(this);
+        oR.navTo("Route_riskasses");
+},
+    logout:function(){
+            var oR = sap.ui.core.UIComponent.getRouterFor(this);
+            oR.navTo("Route_login");
+    }
+        });
+    });
+s

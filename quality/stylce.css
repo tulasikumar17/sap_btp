@@ -1,0 +1,36 @@
+/* Enter your custom styles here */
+/* Enter your custom styles here */
+#1{
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+	padding-top: 15px;
+	padding-right: 38px;
+}
+
+.box{
+	padding-left: 15px;
+}
+
+.btn1{
+	padding-top: 15px;
+	padding-right: 25px;
+}
+
+.btn2{
+	padding-top: 15px;
+	padding-right: 23px;
+}
+
+.btn3{
+	padding-top: 15px;
+	padding-right: 17px;
+}
+
+.th{
+    background: rgb(242, 229, 236);
+    background: linear-gradient(90deg, rgb(88, 191, 152) 20%, rgb(240, 249, 241) 100%);
+    text-transform: inherit;
+  }

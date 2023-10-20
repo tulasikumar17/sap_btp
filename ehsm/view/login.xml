@@ -1,0 +1,16 @@
+<mvc:View controllerName="ehsm.controller.login"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox id="_IDGenVBox1" justifyContent="Center" alignItems="Center" alignContent="Center" fitContainer="true">
+            <items>
+            <Label id="_IDGenLabel1" text="user credentials"></Label>
+            <Input id="user" placeholder="user Id"></Input>
+            <Input id="pass" type="Password"  placeholder="Password"></Input>
+            <Button id="_IDGenButton1" press="onClick" text="Login"></Button>
+            </items>
+            </VBox>
+		</content>
+    </Page>
+</mvc:View>

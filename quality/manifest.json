@@ -1,0 +1,186 @@
+{
+  "_version": "1.37.0",
+  "sap.app": {
+    "id": "quality",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.9.3",
+      "toolsId": "45fa393c-b4aa-4147-bd6a-532ddde11cac"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/sap/ZTUL_ODATA_PRJ1_QUALITY_PORTAL_SRV/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.96.6",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "quality.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "quality.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "Route_login",
+          "pattern": "",
+          "target": [
+            "Targetlogin"
+          ]
+        },
+        {
+          "name": "Route_dash",
+          "pattern": "dashboard",
+          "target": [
+            "dashboard"
+          ]
+        },
+        {
+          "name": "Route_incident",
+          "pattern": "incident",
+          "target": [
+            "incident"
+          ]
+        },
+        {
+          "name": "Route_inspection",
+          "pattern": "inspection",
+          "target": [
+            "inspection"
+          ]
+        },
+        {
+          "name": "Route_result",
+          "pattern": "result",
+          "target": [
+            "result"
+          ]
+        },
+        {
+          "name": "Route_usagerec",
+          "pattern": "usagedec",
+          "target": [
+            "usagedec"
+          ]
+        }
+      ],
+      "targets": {
+        "Targetlogin": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "login",
+          "viewName": "login"
+        },
+        "dashboard": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "dashboard",
+          "viewName": "dashboard"
+        },
+        "incident": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "incident",
+          "viewName": "incident"
+        },
+        "inspection": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "inspection",
+          "viewName": "inspection"
+        },
+        "result": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "result",
+          "viewName": "result"
+        },
+        "usagedec": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "usagedec",
+          "viewName": "usagedec"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "quality.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

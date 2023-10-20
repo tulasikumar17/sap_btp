@@ -1,0 +1,42 @@
+<mvc:View controllerName="quality.controller.dashboard"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+	<headerContent>
+        <Bar id="_IDGenBar2">
+            <contentMiddle>
+                <Text id="_IDGenText5" text="Dashboard"></Text>
+            </contentMiddle>
+        </Bar>
+    </headerContent>
+       <content>
+					<VBox id="_IDGenVBox1" class="box" fitContainer="true">
+					<!--<HBox id="Tabelle">
+					<Text id="_IDGenText1" class="btn" text="Incident List"></Text>
+					<Button id="_IDGenButton1" press="onClick1" text="Open"></Button>
+					</HBox>-->
+					<HBox id="Tabelle1">
+					<Text id="_IDGenText2" class="btn1" text="Inspection List"></Text>
+					<Button id="_IDGenButton2" press="onClick2" text="Open"></Button>
+					</HBox>
+					<HBox id="Tabelle2">
+					<Text id="_IDGenText3" class="btn2" text="Result Record"></Text>
+					<Button id="_IDGenButton3" press="onClick3" text="Open"></Button>
+					</HBox>
+					<HBox id="Tabelle3">
+					<Text id="_IDGenText4" class="btn3" text="Usage Decision"></Text>
+					<Button id="_IDGenButton5" press="onClick4" text="Open"></Button>
+					</HBox>
+					
+                    
+					</VBox>
+				</content>
+				<footer>
+        			<Bar id="_IDGenBar1">
+            <contentRight>
+                <Button id="_IDGenButton4" text="Logout" type="Accept" press="logout"/>
+            </contentRight>
+        </Bar>
+    </footer>
+    </Page>
+</mvc:View>
